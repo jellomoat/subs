@@ -40,7 +40,21 @@ Data analysis entailed parsing scraped data using pandas, using parsed data to s
 
 ### Getting Word Frequencies
 
+Getting word frequencies entailed tokenizing subreddit names and descriptions, removing stop words, lemmatizing/stemming tokens, then getting counts for each lemma.  I wasn't sure which method would yield the most accurate/consistent results so I tried as many as I could.
 
+Getting tokens:
+This was tricky because I wanted to get word frequencies from within subreddit names, which have no spaces, intermittent random characters, and inconsistent capitalization.  Many thanks to [@whdc](https://github.com/whdc) for preparing a gist to help with tokenizing Reddit names.
+<!-- commenting out for now since it's still a private page -->
+<!-- [subreddit name tokenizing gist](https://gist.github.com/whdc/a67e7447e72df94d5fa7851a88124b73). -->
+
+Removing stop words:
+I used `nltk.corpus`'s stopwords for one implementation and `sklearn`'s `CountVectorizer`'s for another.
+
+Lemmatizing tokens:
+Done with `nltk`'s `PorterStemmer`.  I was referencing [@jsoma](https://github.com/jsoma)'s text analysis materials on [investigate.ai](https://investigate.ai/#textanalysis).
+
+Finally counting frequencies:
+I did this using `collections.Counter` and `sklearn`'s `CountVectorizer`.
 
 ### Extracting Topics and Classifying Subreddits
 This is still a major work in progress.  I attempted to do this several ways:
