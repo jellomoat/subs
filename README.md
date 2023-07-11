@@ -15,7 +15,9 @@ A data story about the most popular subreddits and what they say about us
 - People also are very open to offering advice and opinions freely online.
 - There's much love for non-people porn.  Looking for such content?  Try <a href="https://www.reddit.com/r/MapPorn">r/MapPorn</a>, <a href="https://www.reddit.com/r/fightporn">r/fightporn</a>, <a href="https://www.reddit.com/r/shittyfoodporn">r/shittyfoodporn</a>, <a href="https://www.reddit.com/r/DesignPorn">r/DesignPorn</a>, and <a href="https://www.reddit.com/r/mycology">r/mycology</a> (which has "mycoporn").
 - Many types of people on Reddit, though geeks and nerds seem the most engaged judging by how many science, learning, tech, anime, and games subreddits are among the most popular.
-- Many redditors enjoy freedom of speech.  One example of this is the rise of <a href="https://reddit.com/r/AITAH">r/AITAH</a>, which at times eclipses its much elder sibling <a href="https://www.reddit.com/r/AmItheAsshole/">r/AmItheAsshole</a> (2013) in popularity.  The description for r/AITAH:
+- Many redditors enjoy freedom of speech.  One example of this is the rise of <a href="https://reddit.com/r/AITAH">r/AITAH</a>, which at times eclipses its much elder sibling <a href="https://www.reddit.com/r/AmItheAsshole/">r/AmItheAsshole</a> (2013) in popularity.
+
+The description for r/AITAH:
 > this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA but is not allowed there even posting about Scar from the lion king and trying to convince redditors that he was not the AH. rules: don't berate others and no pornography we have children here
 
 <!-- - Many  dislike Reddit's new pricing policies.  Reddit recently limited access to their API (by charging indie developers a lot of money); many admins and mods are protesting. -->
@@ -71,7 +73,7 @@ I adapted the style of the [Reddit subreddits main page](https://www.reddit.com/
 - Styling adapted from [Reddit](https://www.reddit.com/subreddits)
 - Plotting data using [Datawrapper](https://www.datawrapper.de/), [Flourish](https://flourish.studio/), and [Jupyter](https://jupyter.org/)
 
-## Things I Considered or Planned On Doing But Did Not Get To Yet:
+## Things I Considered or Planned On Doing But Did Not Get To Yet
 - Extracting topics and classifying records using non-regex methods
 - Getting most recent post per subreddit
 - Visualizing similarities/relationships between subreddits using word embeddings or network graphs
