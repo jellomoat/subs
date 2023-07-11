@@ -5,20 +5,39 @@ link to story: [on subreddits!](https://jellomoat.github.io/subs/)
 
 ## Description
 
+A data story about the most popular subreddits and what they say about us
+(More description to come)
 
-## Overall Findings
+## Overall Most Interesting Findings
 
+- There are so many subreddits!  There's at least one subreddit created every minute!
+- People often seek advice from complete strangers online.  Out of 1,000 subreddits, over <> sought advice in an "ask"-type community.
+- People also are very open to offering advice and opinions freely online.
+- There's much love for non-people porn.  Looking for such content?  Try <a href="https://www.reddit.com/r/MapPorn">r/MapPorn</a>, <a href="https://www.reddit.com/r/fightporn">r/fightporn</a>, <a href="https://www.reddit.com/r/shittyfoodporn">r/shittyfoodporn</a>, <a href="https://www.reddit.com/r/DesignPorn">r/DesignPorn</a>, and <a href="https://www.reddit.com/r/mycology">r/mycology</a> (which has "mycoporn").
+- Many types of people on Reddit, though geeks and nerds seem the most engaged judging by how many science, learning, tech, anime, and games subreddits are among the most popular.
+- Many redditors enjoy freedom of speech.  One example of this is the rise of <a href="https://reddit.com/r/AITAH">r/AITAH</a>, which at times eclipses its much elder sibling <a href="https://www.reddit.com/r/AmItheAsshole/">r/AmItheAsshole</a> (2013) in popularity.  The description for r/AITAH:
+> this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA but is not allowed there even posting about Scar from the lion king and trying to convince redditors that he was not the AH. rules: don't berate others and no pornography we have children here
 
-## Data Collection Process
+<!-- - Many  dislike Reddit's new pricing policies.  Reddit recently limited access to their API (by charging indie developers a lot of money); many admins and mods are protesting. -->
 
+## Data Collection Process: Scraping, Many Times Over
+Scraping, many times over
 
-### Scraping, many times over
+I used Beautiful Soup to scrape all of [Reddit's popular subreddits pages](https://www.reddit.com/subreddits/popular).  This amounted to 41 pages of roughly 100 records each, nearly 4100 records in total.
 
+I actually initially wanted to scrape all subreddits ever by starting from the newest and working my way back.  I read [a story](https://wegotthiscovered.com/social-media/how-many-subreddits-are-on-reddit) that led me to believe that there were only around 140K subreddits as of last month.  (The article actually stated that there were ~140K _active_ subreddits, something I only realized after scraping over 200K records across 1750 pages.  New subreddits are created every minute; there were over 200K+ subreddits created in just the past few months.)
+
+Both sets of data took a very long time to retrieve, so I implemented cacheing to save each page fetched to disk.  I reviewed Jeremy Singer-Vine's scraping materials and adapted the cacheing parts to my use case.
+
+This all took way, way longer than I anticipated for several reasons:
+1 - There were so many pages, and I put `time.sleep(2)` after each request.  I probably spent well over a few hours having the scraping script execute on my local machine.
+2 - Unexpected issue related (I think?) to global load on Reddit servers.  I'd pass in a limit of 100 records to retrieve per request (the max allowable).  Sometimes I'd get exactly 100, other times 99, 86, 52 even.  It was unpredictable, so I adapted my scraping/crawling code to account for that.
 
 ## Data Analysis Process
-
+Data analysis entailed parsing scraped data using pandas, using parsed data to scrape more data, writing parsed dataframes to new files, and designing charts and tables using those files.  Parsing included general ETL along with getting word frequencies and extracting topics, detailed further below.
 
 ### Getting Word Frequencies
+
 
 
 ### Extracting Topics and Classifying Subreddits
