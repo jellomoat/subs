@@ -85,7 +85,8 @@ Sorry about the font size by the way!  I preserved the font and (small) text-siz
 - Web scraping using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)! 
 - Lots of [pandas](https://pandas.pydata.org/)
 - Progress monitoring using [tqdm](https://pypi.org/project/tqdm/#ipython-jupyter-integration)
-- Text analysis, counting word frequencies, lemmatizing tokens, and grouping records using [nltk](https://www.nltk.org/), [sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html), [collections](https://docs.python.org/3/library/collections.html#collections.Counter), and [regex](https://regex101.com/)  Heavily referenced [investigate.ai](https://investigate.ai/#textanalysis)
+- Text analysis, counting word frequencies, lemmatizing tokens, and grouping records using [nltk](https://www.nltk.org/), [sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html), [collections](https://docs.python.org/3/library/collections.html#collections.Counter), and [regex](https://regex101.com/)
+- Heavily referenced [investigate.ai](https://investigate.ai/#textanalysis)
 - Styling adapted from [Reddit](https://www.reddit.com/subreddits)
 - Plotting data using [Datawrapper](https://www.datawrapper.de/), [Flourish](https://flourish.studio/), and [Jupyter](https://jupyter.org/)
 
