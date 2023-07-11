@@ -40,7 +40,7 @@ Data analysis entailed parsing scraped data using pandas, using parsed data to s
 
 ### Getting Word Frequencies
 
-Getting word frequencies entailed tokenizing subreddit names and descriptions, removing stop words, lemmatizing/stemming tokens, then getting counts for each lemma.  I wasn't sure which method would yield the most accurate/consistent results so I tried as many as I could.
+Getting word frequencies entailed tokenizing subreddit names and descriptions, removing stop words, lemmatizing/stemming tokens, then getting counts for each lemma.  I wasn't sure which method would yield the most accurate/consistent results so I tried as many as I could.  I referenced [@jsoma](https://github.com/jsoma)'s text analysis materials on [investigate.ai](https://investigate.ai/#textanalysis) for much of this work.
 
 Getting tokens:
 This was tricky because I wanted to get word frequencies from within subreddit names, which have no spaces, intermittent random characters, and inconsistent capitalization.  Many thanks to [@whdc](https://github.com/whdc) for preparing a gist to help with tokenizing Reddit names.
@@ -50,8 +50,8 @@ This was tricky because I wanted to get word frequencies from within subreddit n
 Removing stop words:
 I used `nltk.corpus`'s stopwords for one implementation and `sklearn`'s `CountVectorizer`'s for another.
 
-Lemmatizing tokens:
-Done with `nltk`'s `PorterStemmer`.  I was referencing [@jsoma](https://github.com/jsoma)'s text analysis materials on [investigate.ai](https://investigate.ai/#textanalysis).
+Stemming and Lemmatizing tokens:
+Done with `nltk`'s `PorterStemmer` and `WordNetLemmatizer`.
 
 Finally counting frequencies:
 I did this using `collections.Counter` and `sklearn`'s `CountVectorizer`.
@@ -78,6 +78,8 @@ Mapping word frequencies!!!  In Flourish!?!
 
 ## Page Formatting
 I adapted the style of the [Reddit subreddits main page](https://www.reddit.com/subreddits) for this story.  I first started with Reddit's HTML/CSS and pared that down to just preserve its color, orientation, and font particulars (background, shading, sizes, element positioning, etc.).  Most of the page's text content was replaced, and many of the elements there were removed.  I wanted my site to both appear distinctly different from Reddit while still evoking some sense of Reddit.
+
+Sorry about the font size by the way!  I preserved the font and (small) text-size of the Reddit page I was referencing.  I'll come back to adjust the sizes soon.  For now please Zoom in if the text is smaller than you'd prefer.
 
 ## Tools and Techniques Used
 - Web scraping using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)! 
