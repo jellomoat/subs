@@ -77,22 +77,27 @@ Initially I was looking up subreddits that I could not tag based off of name or 
 Bubble Charts:
 I used Flourish to create two bubble charts plotting the <a href="https://public.flourish.studio/visualisation/14399872/">1000</a> and <a href="https://public.flourish.studio/visualisation/14399773/">100</a> most popular subreddits as of July 2023.  These are explorables best viewed on desktop (hover over bubbles for more detail!)
 
+Horizontal Bar Chart:
+Mapping word frequencies!!!  In Flourish!?!
+
 Table:
 I also used Datawrapper to create a table of this data.  I wanted to provide a means for easily reviewing the data itself.  I enjoyed putting in random search terms and discovering related up-and-coming communities.  This project led me to <a href="https://www.reddit.com/r/DiWHY/">r/DiWHY</a>, <a href="https://www.reddit.com/r/NatureIsFuckingLit/">r/NatureIsFuckingLit</a>, and <a href="https://www.reddit.com/r/technicallythetruth">r/technicallythetruth</a>.
 
-Horizontal Bar Chart:
-Mapping word frequencies!!!  In Flourish!?!
 <p float="left" align="middle">
+    <img src="./subreddits_files/r_diy_screenshot.png" alt="r/DiWHY screenshot" width="32%"/>
     <img src="./subreddits_files/r_nature_screenshot.png" alt="r/NatureIsFuckingLit screenshot" width="32%"/>
-    <img src="./subreddits_files/r_diwhy_screenshot.png" alt="r/DiWHY screenshot" width="32%"/>
     <img src="./subreddits_files/r_technically_screenshot.png" alt="r/technicallythetruth screenshot" width="32%"/>
 </p>
 
 
 ## Page Formatting
-I adapted the style of the [Reddit subreddits main page](https://www.reddit.com/subreddits) for this story.  I first started with Reddit's HTML/CSS and pared that down to just preserve its color, orientation, and font particulars (background, shading, sizes, element positioning, etc.).  Most of the page's text content was replaced, and many of the elements there were removed.  I wanted my site to both appear distinctly different from Reddit while still evoking some sense of Reddit.
+I adapted the style of the [Reddit subreddits main page](https://www.reddit.com/subreddits) for this story.  I first started with Reddit's HTML/CSS and pared that down to preserve colors, orientation, and font particulars (background, shading, sizes, element positioning, etc.).  Most of the page's text content was replaced, and many of the elements there were removed.  I wanted my site to both appear distinctly different from Reddit while still evoking some sense of Reddit.
 
-Sorry about the font size by the way!  I preserved the font and (small) text-size of the Reddit page I was referencing.  I'll come back to adjust the sizes soon.  For now please Zoom in if the text is smaller than you'd prefer.
+<p float="left" align="middle">
+    <img src="./subreddits_files/actual_reddit_screenshot.png" alt="actual reddit screenshot" width="75%"/>
+</p>
+
+Sorry about the font size by the way!  I kept the font and (small) text-size of the Reddit page I was referencing.  I'll come back to adjust the sizes soon.  For now please Zoom in if the text is smaller than you'd prefer.
 
 ## Tools and Techniques Used
 - Web scraping using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)! 
