@@ -14,12 +14,23 @@
         <link rel="alternate" type="application/atom+xml" title="RSS" href="https://www.reddit.com/subreddits/popular/.rss"><link rel="stylesheet" type="text/css" href="./subreddits_files/reddit.ZP_TrB_0MZ4.css" media="all">
         <script type="text/javascript" src="./subreddits_files/script.js"></script>
         <style>
-            div#popup { display: none; }
+            div#popup1 { display: none; }
             /* use a media query to filter small devices */
             @media only screen and (max-device-width:480px) {
                 /* show the popup */
-                div#popup { 
+                div#popup1 { 
                     display: block; 
+                    margin: auto; 
+                    border: 0px;
+                    text-align: center;
+                }
+            }
+            div#popup2 { display: block; }
+            /* use a media query to filter small devices */
+            @media only screen and (max-device-width:480px) {
+                /* show the popup */
+                div#popup2 { 
+                    display: none; 
                     margin: auto; 
                     border: 0px;
                     text-align: center;
@@ -199,10 +210,13 @@
                     </div>
                 </div>
             </div> -->
-            <img src="./subreddits_files/jellomoat-avatar.png" width="75%" alt="my reddit avatar, a colorful alien wearing a vest and lavallière" style="float: right;"></img>
+            <img src="./subreddits_files/jellomoat-avatar.png" width="55%" alt="my reddit avatar, a colorful alien wearing a vest and lavallière" style="float: right; z-index: 5; margin-left: 5px; margin-right: 5px;"></img>
 
-            <div class="sidecontentbox ">
-                <div class="title"></div>
+            <div class="sidecontentbox " style="padding:5px;">
+                <!-- <div class="title"> -->
+                    <div id="popup2" class="centerpopup"><br><span style="font-size:25px; float:left; margin-left: 5px;">✨</span><br><span style="font-size: 60px; float:right;">✨</span><br></div>
+                    <div id="popup1" class="centerpopup">✨ Hi!  This page is best viewed on desktop.  I recommend turning your phone 90 degrees if you're on a mobile device. ✨<br><br></div>
+                <!-- </div> -->
             </div>
         </div>
         <!-- searchbar -->
@@ -217,7 +231,6 @@
                     </form>
             </div>
             <div class="story-text">
-                <div id="popup" class="centerpopup">✨ Hi!  This page is best viewed on desktop.  I recommend turning your phone 90 degrees if you're on a mobile device. ✨<br><br></div>
                 <div></div>
 
                 <p1>
