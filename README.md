@@ -35,6 +35,8 @@ This all took way, way longer than I anticipated for several reasons:
 1 - There were so many pages, and I put `time.sleep(2)` after each request.  I probably spent well over a few hours having the scraping script execute on my local machine.
 2 - Unexpected issue related (I think?) to global load on Reddit servers.  I'd pass in a limit of 100 records to retrieve per request (the max allowable).  Sometimes I'd get exactly 100, other times 99, 86, 52 even.  It was unpredictable, so I adapted my scraping/crawling code to account for that.
 
+<img src="./subreddits_files/reddit_server_issue_screencap.png" alt="reddit server issue screencap" width="50%"/>
+
 ## Data Analysis Process
 Data analysis entailed parsing scraped data using pandas, using parsed data to scrape more data, writing parsed dataframes to new files, and designing charts and tables using those files.  Parsing included general ETL along with getting word frequencies and extracting topics, detailed further below.
 
