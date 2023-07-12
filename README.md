@@ -32,13 +32,13 @@ I actually initially wanted to scrape all subreddits ever by starting from the n
 Both sets of data took a very long time to retrieve, so I implemented cacheing to save each page fetched to disk.  I reviewed Jeremy Singer-Vine's scraping materials and adapted the cacheing parts to my use case.
 
 This all took way, way longer than I anticipated for several reasons:
-1 - There were so many pages, and I put `time.sleep(2)` after each request.  I probably spent well over a few hours having the scraping script execute on my local machine.
-2 - Unexpected issue related (I think?) to global load on Reddit servers.  I'd pass in a limit of 100 records to retrieve per request (the max allowable).  Sometimes I'd get exactly 100, other times 99, 86, 52 even.  It was unpredictable, so I adapted my scraping/crawling code to account for that.
+- 1 - There were so many pages, and I put `time.sleep(2)` after each request.  I probably spent well over a few hours having the scraping script execute on my local machine.
+- 2 - Unexpected issue related (I think?) to global load on Reddit servers.  I'd pass in a limit of 100 records to retrieve per request (the max allowable).  Sometimes I'd get exactly 100, other times 99, 86, 52 even.  It was unpredictable, so I adapted my scraping/crawling code to account for that.
 
 <img src="./subreddits_files/reddit_server_issue_screencap.png" alt="reddit server issue screencap" width="50%"/>
 
 ## Data Analysis Process
-Data analysis entailed parsing scraped data using pandas, using parsed data to scrape more data, writing parsed dataframes to new files, and designing charts and tables using those files.  Parsing included general ETL along with getting word frequencies and extracting topics, detailed further below.
+Data analysis involved parsing scraped data using pandas, using parsed data to scrape more data, writing parsed dataframes to new files, and designing charts and tables using those files.  Parsing included general ETL along with getting word frequencies and extracting topics, detailed further below.
 
 ### Getting Word Frequencies
 
@@ -65,6 +65,11 @@ I first tried extracting topics from subreddit names and descriptions using [skl
 
 So I scripted as much as I could using counting methods and determined categories based on most common words (using word frequencies described [here](#getting-word-frequencies)).  I then aggregated regex patterns for each category, wrote to csv any records that did not match any specified category, then integer-tagged each record in that csv with integers corresponding to categories.  This tagged csv was subsequently loaded and re-parsed to add to the accumulated category regex patterns.
 
+<p float="left" align="middle">
+    <img src="./subreddits_files/regex_screenshot_1.png" alt="regex screenshot 1" width="45%"/>
+    <img src="./subreddits_files/regex_screenshot_2.png" alt="regex screenshot 2" width="45%"/>
+</p>
+
 Initially I was looking up subreddits that I could not tag based off of name or description alone.  But that was really time-consuming since there were hundreds of the original 1K dataset to sift through.  I did as much as I easily could and assigned value 12 (the "other" category) to the rest, with the intent to come back and re-tag/re-classify the remaining others either the semi-painful regex way or using some sort of more advanced method for text analysis.
 
 ### Creating Plots and Tables
@@ -77,6 +82,12 @@ I also used Datawrapper to create a table of this data.  I wanted to provide a m
 
 Horizontal Bar Chart:
 Mapping word frequencies!!!  In Flourish!?!
+<p float="left" align="middle">
+    <img src="./subreddits_files/r_nature_screenshot.png" alt="r/NatureIsFuckingLit screenshot" width="32%"/>
+    <img src="./subreddits_files/r_diwhy_screenshot.png" alt="r/DiWHY screenshot" width="32%"/>
+    <img src="./subreddits_files/r_technically_screenshot.png" alt="r/technicallythetruth screenshot" width="32%"/>
+</p>
+
 
 ## Page Formatting
 I adapted the style of the [Reddit subreddits main page](https://www.reddit.com/subreddits) for this story.  I first started with Reddit's HTML/CSS and pared that down to just preserve its color, orientation, and font particulars (background, shading, sizes, element positioning, etc.).  Most of the page's text content was replaced, and many of the elements there were removed.  I wanted my site to both appear distinctly different from Reddit while still evoking some sense of Reddit.
