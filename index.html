@@ -3,11 +3,30 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>subreddits: what the top subreddits say about us</title>
-        <meta name="description" content="A data story about the most popular subreddits and what they say about us.">
-        <meta name="viewport" content="width=1024">
+        <meta property="og:title" content="REDD ALL ABOUT IT: What the top subreddits say about us">
+        <meta name="description" property="og:description" content="A data story about the most popular subreddits and what they say about us.">
+        <meta property="og:type" content="article">
+        <!-- replace og:image later -->
+        <meta property="og:image" content="#">
+        
+        <!-- <meta name="viewport" content="width=1024"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="theme-color" content="#ffffff">
         <link rel="alternate" type="application/atom+xml" title="RSS" href="https://www.reddit.com/subreddits/popular/.rss"><link rel="stylesheet" type="text/css" href="./subreddits_files/reddit.ZP_TrB_0MZ4.css" media="all">
         <script type="text/javascript" src="./subreddits_files/script.js"></script>
+        <style>
+            div#popup { display: none; }
+            /* use a media query to filter small devices */
+            @media only screen and (max-device-width:480px) {
+                /* show the popup */
+                div#popup { 
+                    display: block; 
+                    margin: auto; 
+                    border: 0px;
+                    text-align: center;
+                }
+            }
+        </style>
     </head>
     <body class="listing-page loggedin subreddits-page">
         <div id="header" role="banner">
@@ -198,14 +217,14 @@
                         </div>
                     </form><p></p>
             </div>
-
+            <div id="popup" class="centerpopup">✨ Hi!  This page is best viewed on desktop.  I recommend turning your phone 90 degrees if you're on a mobile device. ✨<br><br></div>
+            <div></div>
             <div class="story-text">
                 <p1>
                     lorem ipsum for now                    
                 </p1>
 
                 <p><a href="./less_common_lemmas.html">less common lemmas here (1157)</a></p>
-
 
             </div>
             <!-- top 100 -->

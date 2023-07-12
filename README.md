@@ -11,11 +11,11 @@ A data story about the most popular subreddits and what they say about us
 ## Overall Most Interesting Findings
 
 - There are so many subreddits!  There's at least one subreddit created every minute!
-- People often seek advice from complete strangers online.  Out of 1,000 subreddits, over <> sought advice in an "ask"-type community.
-- People also are very open to offering advice and opinions freely online.
-- There's much love for non-people porn.  Looking for such content?  Try <a href="https://www.reddit.com/r/MapPorn">r/MapPorn</a>, <a href="https://www.reddit.com/r/fightporn">r/fightporn</a>, <a href="https://www.reddit.com/r/shittyfoodporn">r/shittyfoodporn</a>, <a href="https://www.reddit.com/r/DesignPorn">r/DesignPorn</a>, and <a href="https://www.reddit.com/r/mycology">r/mycology</a> (which has "mycoporn").
-- Many types of people on Reddit, though geeks and nerds seem the most engaged judging by how many science, learning, tech, anime, and games subreddits are among the most popular.
-- Many redditors enjoy freedom of speech.  One example of this is the rise of <a href="https://reddit.com/r/AITAH">r/AITAH</a>, which at times eclipses its much elder sibling <a href="https://www.reddit.com/r/AmItheAsshole/">r/AmItheAsshole</a> (2013) in popularity.
+- People often seek advice from complete strangers online.  Out of 1,000 subreddits, over 37 sought advice in an "ask"-type community.
+- People also are very willing to offering advice and opinions online.  These are among the most engaged communities.
+- There's much love for non-people porn.  Looking for this type of content?  Try <a href="https://www.reddit.com/r/MapPorn">r/MapPorn</a>, <a href="https://www.reddit.com/r/fightporn">r/fightporn</a>, <a href="https://www.reddit.com/r/shittyfoodporn">r/shittyfoodporn</a>, <a href="https://www.reddit.com/r/DesignPorn">r/DesignPorn</a>, and <a href="https://www.reddit.com/r/mycology">r/mycology</a> (which has "mycoporn").
+- There are many types of people on Reddit - and a community seemingly for each -- though geeks and nerds seem the most engaged judging by how many science, learning, tech, anime, and games subreddits are among the most popular.
+- Many redditors prefer less censorship.  One example of this is the rise of <a href="https://reddit.com/r/AITAH">r/AITAH</a> (2021), which at times eclipses its much older sibling <a href="https://www.reddit.com/r/AmItheAsshole/">r/AmItheAsshole</a> (2013) in popularity.
 
 The description for r/AITAH:
 > this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA but is not allowed there even posting about Scar from the lion king and trying to convince redditors that he was not the AH. rules: don't berate others and no pornography we have children here
